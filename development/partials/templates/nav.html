@@ -1,0 +1,32 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<a class="navbar-brand" data-ui-sref="home">Title</a>
+    <div class="container">
+        <div class="dropdown navbar-right">
+            <a ui-sref="home"  class="btn btn-danger navbar-btn">Home</a>
+            <button class="btn btn-success dropdown-toggle navbar-btn"
+                    type="button"
+                    id="dropdownMenu1"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true">Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li ng-repeat="item in items">
+                    <a ui-sref="{{item.state}}">{{item.name}}</a>
+                </li>
+            </ul>
+            <button class="btn btn-success dropdown-toggle navbar-btn"
+                    type="button"
+                    id="dropdownMenu2"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true">Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li ng-repeat="item in projects">
+                    <a ui-sref="{{item.state}}">{{item.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
